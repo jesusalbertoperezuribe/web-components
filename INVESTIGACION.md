@@ -17,4 +17,5 @@ RTA: en open se puede aceder desde fuera del componente y en close no
 
 4. ¿Qué es un <slot> y para qué sirve en un componente reutilizable?
 
-RTA: 
+RTA: es un marcador de posicion en la plantilla HTML
+
