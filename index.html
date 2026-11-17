@@ -70,8 +70,35 @@
     font-size: 0.9rem;
     line-height: 1.4;
     }
+    </style>
+    <article class="card">
+      <div class="header">
+        <!-- Marcadores vacíos (R1) -->
+        <h3 id="nombre-plato"></h3>
+        <span class="precio" id="precio-plato"></span>
+      </div>
+      <span class="badge" id="estado-plato"></span>
+      
+      <!-- R4: Slot para nota o descripción libre -->
+      <div class="descripcion">
+        <slot>Sin descripción adicional.</slot>
+      </div>
+    </article>
+</template>
 
-        </style>
-    </template>
+<plato-menu nombre="Bandeja Típica" precio="$28.000" disponibilidad="Disponible">
+    Incluye arroz, frijoles, carne asada, chicharrón, huevo frito, tajada y arepa.
+</plato-menu>
+
+
+<plato-menu nombre="Ajiaco Santafereño" precio="$22.000" disponibilidad="Disponible">
+    Acompañado de crema de leche, alcaparras, aguacate y porción de arroz blanco.
+</plato-menu>
+
+<plato-menu nombre="Trucha al Ajillo" precio="$32.000" disponibilidad="Agotado">
+</plato-menu>
+
+
+
 </body>
 </html>
